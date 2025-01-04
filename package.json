@@ -4,7 +4,7 @@
   "description": "An efficient VS Code extension to convert images into various formats using ImageMagick, right from your editor.",
   "version": "0.0.1",
   "icon": "resources/logo.png",
-  "publisher": "Sakib Al Hasan",
+  "publisher": "SakibAlHasan",
 "repository": {
   "type": "git",
   "url": "https://github.com/thesakibalhasan/image-convert"
