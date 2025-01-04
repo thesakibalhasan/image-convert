@@ -1,0 +1,420 @@
+{
+  "name": "image-convert",
+  "displayName": "Image Convert",
+  "description": "An efficient VS Code extension to convert images into various formats using ImageMagick, right from your editor.",
+  "version": "0.0.1",
+  "icon": "resources/logo.png",
+  "publisher": "Sakib Al Hasan",
+"repository": {
+  "type": "git",
+  "url": "https://github.com/thesakibalhasan/image-convert"
+},
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+  
+    "commandPalette": [
+      {
+          "command": "image-convert.convertToPNG",
+          "when": "false"
+      },
+      {
+                "command": "image-convert.convertToPDF",
+                "when": "false"
+     }
+  ],
+    "commands": [
+      {
+        "command": "image-convert.convertPNG",
+        "title": "Convert Image To... 🔄",
+        "category": "Image Conversion"
+
+      },
+      {
+        "command": "image-convert.convertToPDF",
+        "title": "Convert to PDF"
+      },
+      {
+        "command": "image-convert.convertToARW",
+        "title": "Convert to ARW"
+
+      },
+      {
+        "command": "image-convert.convertToAVIF",
+        "title": "Convert to AVIF"
+      },
+      {
+        "command": "image-convert.convertToGIF",
+        "title": "Convert to GIF"
+      },
+      {
+        "command": "image-convert.convertToJPG",
+        "title": "Convert to JPG"
+      },
+      {
+        "command": "image-convert.convertToWEBP",
+        "title": "Convert to WEBP"
+      },
+      {
+        "command": "image-convert.convertToBMP",
+        "title": "Convert to BMP"
+      },
+      {
+        "command": "image-convert.convertToODD",
+        "title": "Convert to ODD"
+      },
+      {
+        "command": "image-convert.convertToPSD",
+        "title": "Convert to PSD"
+      },
+      {
+        "command": "image-convert.convertToEPS",
+        "title": "Convert to EPS"
+      },
+      {
+        "command": "image-convert.convertToJPEG",
+        "title": "Convert to JPEG"
+      },
+      {
+        "command": "image-convert.convertToTIFF",
+        "title": "Convert to TIFF"
+      },
+      {
+        "command": "image-convert.convertToSVG",
+        "title": "Convert to SVG"
+      },
+      {
+        "command": "image-convert.convertToCR2",
+        "title": "Convert to CR2"
+      },
+      {
+        "command": "image-convert.convertToCR3",
+        "title": "Convert to CR3"
+      },
+      {
+        "command": "image-convert.convertToCRW",
+        "title": "Convert to CRW"
+      },
+      {
+        "command": "image-convert.convertToDCR",
+        "title": "Convert to DCR"
+      },
+      {
+        "command": "image-convert.convertToDNG",
+        "title": "Convert to DNG"
+      },
+      {
+        "command": "image-convert.convertToERF",
+        "title": "Convert to ERF"
+      },
+      {
+        "command": "image-convert.convertToHEIC",
+        "title": "Convert to HEIC"
+      },
+      {
+        "command": "image-convert.convertToHEIF",
+        "title": "Convert to HEIF"
+      },
+      {
+        "command": "image-convert.convertToICNS",
+        "title": "Convert to ICNS"
+      },
+      {
+        "command": "image-convert.convertToJFIF",
+        "title": "Convert to JFIF"
+      },
+      {
+        "command": "image-convert.convertToMOS",
+        "title": "Convert to MOS"
+      },
+      {
+        "command": "image-convert.convertToMRW",
+        "title": "Convert to MRW"
+      },
+      {
+        "command": "image-convert.convertToNEF",
+        "title": "Convert to NEF"
+      },
+      {
+        "command": "image-convert.convertToODG",
+        "title": "Convert to ODG"
+      },
+      {
+        "command": "image-convert.convertToORF",
+        "title": "Convert to ORF"
+      },
+      {
+        "command": "image-convert.convertToPEF",
+        "title": "Convert to PEF"
+      },
+      {
+        "command": "image-convert.convertToPPM",
+        "title": "Convert to PPM"
+      },
+      {
+        "command": "image-convert.convertToRAW",
+        "title": "Convert to RAW"
+      },
+      {
+        "command": "image-convert.convertToTIF",
+        "title": "Convert to TIF"
+      },
+
+      {
+        "command": "image-convert.convertToPS",
+        "title": "Convert to PS"
+      },
+      {
+        "command": "image-convert.convertToRAF",
+        "title": "Convert to RAF"
+      },
+      {
+        "command": "image-convert.convertToRW2",
+        "title": "Convert to RW2"
+      },
+      {
+        "command": "image-convert.convertToXCF",
+        "title": "Convert to XCF"
+      },
+      {
+        "command": "image-convert.convertToX3F",
+        "title": "Convert to X3F"
+      },
+      {
+        "command": "image-convert.convertToXPS",
+        "title": "Convert to XPS"
+      },
+
+      {
+        "command": "image-convert.customFormats",
+        "title": "Custom Formats... 🔧"
+      },
+      {
+        "command": "image-convert.convertToPNG",
+        "title": "Convert to PNG"
+      },
+      {
+        "command": "image-convert.convertToHDR",
+        "title": "Convert to HDR"
+      },
+      {
+        "command": "image-convert.convertToAI",
+        "title": "Convert to AI"
+      },
+      {
+        "command": "image-convert.convertToICO",
+        "title": "Convert to ICO"
+      },
+      {
+        "command": "image-convert.convertToJPGquality10",
+        "title": "Quality 10%"
+      },
+      {
+        "command": "image-convert.convertToJPGquality20",
+        "title": "Quality 20%"
+      },
+      {
+        "command": "image-convert.convertToJPGquality30",
+        "title": "Quality 30%"
+      },
+      {
+        "command": "image-convert.convertToJPGquality40",
+        "title": "Quality 40%"
+      },
+      {
+        "command": "image-convert.convertToJPGquality50",
+        "title": "Quality 50%"
+      },
+      {
+        "command": "image-convert.convertToJPGquality60",
+        "title": "Quality 60%"
+      },
+      {
+        "command": "image-convert.convertToJPGquality70",
+        "title": "Quality 70%"
+      },
+      {
+        "command": "image-convert.convertToJPGquality80",
+        "title": "Quality 80%"
+      },
+      {
+        "command": "image-convert.convertToJPGquality90",
+        "title": "Quality 90%"
+      },
+      {
+        "command": "image-convert.convertToJPGquality100",
+        "title": "Quality 100%"
+      }
+      
+    ],
+    "submenus": [
+      {
+        "id": "image-convert.submenu",
+        "label": "Convert Image To... 🔄"
+      },
+      {
+        "id": "image-convert.documentFormats",
+        "label": "Document Formats...📄"
+      },
+      {
+        "id": "image-convert.imageFormats",
+        "label": "Image Formats...🖼️"
+      },
+      {
+        "id": "image-convert.vectorFormats",
+        "label": "Vector Formats...✴"
+      },
+      {
+        "id": "image-convert.otherFormats",
+        "label": "Other Formats...🗂️"
+      },
+
+      {
+        "id": "image-convert.convertToICO",
+        "label": "Convert to ICO..."
+      },
+      {
+        "id": "image-convert.convertToJPG",
+        "label": "Convert to JPG..."
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "submenu": "image-convert.submenu",
+          "when": "resourceExtname =~ /^\\.((png|jpg|jpeg|bmp|ico|webp|tiff|svg|avif|odd|psd|eps|jpeg|3fr|cr3|crw|dcr|erf|heic|heif|icns|jfif|mos|odg|ppm|raw|tif|ps|raf|xcf|xps|hdr|gif|jps|tga|ppm|pgm|pbm|pam|pcx|wmf|xps|postscript|swf|pict|flif|ico|bpg|xcf|mpo|pns|jps|miff|png|jpg|jpeg|bmp|ico|webp|tiff|svg|avif|odd|psd|eps|jpeg|3fr|aai|aff|apn|art|avs|bmp|cal|ccx|cdr|cdt|cin|cmx|cmy|cmyk|cr3|crw|cur|cut|cvs|dcm|dcr|dcx|dds|dib|djv|dot|dpx|dst|emz|epd|epi|eps2|eps3|epsf|epsi|ept|erf|exp|exr|fax|fig|fit|fli|fpx|fts|g3|g4|gif|gpl|gra|gv|gvd|hdr|hei|heif|hpg|icn|ico|iiq|inf|inl|ipl|ith|j2c|j2k|jbg|jbi|jfi|jif|jng|jnx|jp2|jpe|jpg|jps|jpt|jxr|k25|kdc|map|mat|mef|mif|mix|mng|mon|mos|mpc|mtv|nrw|odd|odg|otb|otg|p7|pal|palm|pam|pbm|pcd|pcl|pcs|pct|pcx|pd|pdb|pes|pfa|pfm|pgm|pgx|pic|pict|pix|pla|plist|plt|png|pnm|ppm|ps|ps2|ps3|psb|psd|psp|ptif|pwp|qoi|rad|raf|ras|raw|rfg|rgb|rgba|rgbo|rgf|rwl|sct|sfw|sid|six|sixel|sk|sk1|sr2|srf|std|sun|svg|svgz|tga|thm|tif|tiff|tim|tm2|uil|uyvy|vicar|viff|vips|vsd|wbmp|wdp|webp|wmz|wpg|xbm|xc|xcf|xpm|xps|xv|xwd|yu|abc))$/i",
+
+          "group": "navigation"
+        }
+      ],
+      "image-convert.submenu": [
+        {
+          "submenu": "image-convert.documentFormats"
+        },
+        {
+          "submenu": "image-convert.imageFormats"
+        },
+        {
+          "submenu": "image-convert.vectorFormats"
+        },
+        {
+          "submenu": "image-convert.otherFormats"
+        },
+        {
+          "command": "image-convert.customFormats"
+        }
+
+
+
+      ],
+      "image-convert.documentFormats": [
+        {
+          "command": "image-convert.convertToPDF"
+        }
+      ],
+      "image-convert.imageFormats": [
+        { "command": "image-convert.convertToARW" },
+        { "command": "image-convert.convertToAVIF" },
+        { "command": "image-convert.convertToGIF" },
+
+        { "submenu": "image-convert.convertToJPG" },
+
+
+        { "command": "image-convert.convertToWEBP" },
+        { "command": "image-convert.convertToBMP" },
+        { "command": "image-convert.convertToODD" },
+        { "command": "image-convert.convertToPSD" },
+        { "command": "image-convert.convertToEPS" },
+
+
+        { "command": "image-convert.convertToICO" },
+
+
+        { "command": "image-convert.convertToJPEG" },
+        { "command": "image-convert.convertToTIFF" },
+        { "command": "image-convert.convertToPNG" }
+      ],
+
+
+      "image-convert.convertToJPG": [
+        { "command": "image-convert.convertToJPGquality10" },
+        { "command": "image-convert.convertToJPGquality20" },
+        { "command": "image-convert.convertToJPGquality30" },
+        { "command": "image-convert.convertToJPGquality40" },
+        { "command": "image-convert.convertToJPGquality50" },
+        { "command": "image-convert.convertToJPGquality60" },
+        { "command": "image-convert.convertToJPGquality70" },
+        { "command": "image-convert.convertToJPGquality80" },
+        { "command": "image-convert.convertToJPGquality90" },
+        { "command": "image-convert.convertToJPGquality100" }
+      ],
+      "image-convert.vectorFormats": [
+        {
+          "command": "image-convert.convertToSVG"
+        },
+        {"command": "image-convert.convertToAI" }
+      ],
+      "image-convert.otherFormats": [
+        { "command": "image-convert.convertToCR2" },
+        { "command": "image-convert.convertToCR3" },
+        { "command": "image-convert.convertToCRW" },
+        { "command": "image-convert.convertToDCR" },
+        { "command": "image-convert.convertToDNG" },
+        { "command": "image-convert.convertToERF" },
+        { "command": "image-convert.convertToHEIC" },
+        { "command": "image-convert.convertToHEIF" },
+        { "command": "image-convert.convertToICNS" },
+        { "command": "image-convert.convertToJFIF" },
+        { "command": "image-convert.convertToMOS" },
+        { "command": "image-convert.convertToMRW" },
+        { "command": "image-convert.convertToNEF" },
+        { "command": "image-convert.convertToODG" },
+        { "command": "image-convert.convertToORF" },
+        { "command": "image-convert.convertToPEF" },
+        { "command": "image-convert.convertToPPM" },
+        { "command": "image-convert.convertToRAW" },
+        { "command": "image-convert.convertToTIF" },
+        { "command": "image-convert.convertToPS" },
+        { "command": "image-convert.convertToRAF" },
+        { "command": "image-convert.convertToRW2" },
+        { "command": "image-convert.convertToXCF" },
+        { "command": "image-convert.convertToX3F" },
+        { "command": "image-convert.convertToXPS" },
+        {"command": "image-convert.convertToHDR" }
+
+      ],
+
+      "image-convert.customFormats": [
+        {
+          "command": "image-convert.customFormats"
+        }
+      ]
+
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
