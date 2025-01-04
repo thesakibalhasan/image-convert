@@ -276,7 +276,7 @@ export function activateDynamicCommands(context: vscode.ExtensionContext) {
       { command: 'image-convert.convertToJPGquality100', format: 'jpg', quality: '100'  },
       { command: 'image-convert.convertToJPGqualitycustom', format: 'jpg', quality: 'custom'  },
 
-      { command: 'image-convert.convertToICOsize', format: 'ico', quality: '100'}
+      { command: 'image-convert.convertToICO', format: 'ico', quality: '100'}
       
 
 
