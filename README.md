@@ -281,6 +281,6 @@ The purpose of the extension's custom format menu is to allow any image to be co
 
 
 ## Support
-If you encounter any issues or have suggestions, feel free to [open an issue](https://github.com/iamthesakibalhasan/image-convert/issues).
+If you encounter any issues or have suggestions, feel free to [open an issue](https://github.com/thesakibalhasan/image-convert/issues).
 
 
